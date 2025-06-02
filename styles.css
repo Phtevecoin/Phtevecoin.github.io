@@ -224,13 +224,23 @@ footer {
   }
 
   .floating-socials {
-    top: 10px;
-    right: 10px;
+    position: fixed;
+    bottom: 10px;
+    top: auto;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.6); /* optional for visibility */
+    z-index: 999;
   }
 
   .floating-socials a {
     font-size: 10px;
-    padding: 6px 10px;
+    padding: 6px 8px;
+    border-width: 1px;
   }
 
   .container {
